@@ -1,0 +1,5 @@
+#!/bin/bash
+
+if [ "$1" == "remove" ]; then
+    /usr/sbin/update-rc.d oracle-shm remove
+fi

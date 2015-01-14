@@ -1,0 +1,6 @@
+#!/bin/bash
+
+if [ "$1" == "configure" ]; then
+    /usr/sbin/update-rc.d oracle-shm defaults
+    /etc/init.d/oracle-shm start
+fi
