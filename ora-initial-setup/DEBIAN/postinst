@@ -1,6 +1,8 @@
 #!/bin/bash
 
 if [ "$1" == "configure" ]; then
+    groupadd -r dba
+    useradd -r -N -d /u01/app/oracle -G dba oracle
     /usr/sbin/update-rc.d oracle-shm defaults
     /etc/init.d/oracle-shm start
 fi

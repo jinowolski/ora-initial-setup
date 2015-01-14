@@ -2,4 +2,6 @@
 
 if [ "$1" == "remove" ]; then
     /usr/sbin/update-rc.d oracle-shm remove
+    userdel oracle
+    groupdel dba
 fi
