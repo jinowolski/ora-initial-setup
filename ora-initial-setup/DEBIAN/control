@@ -2,7 +2,8 @@ Package: ora-initial-setup
 Version: 11.2.0-1
 Priority: extra
 Architecture: amd64
-Depends: libaio1, libc6 (>= 2.7-1), libgcc1 (>= 1:4.1.1), libstdc++6 (>= 4.1.1)
+Depends: libaio1, libc6 (>= 2.7-1), libgcc1 (>= 1:4.1.1), libstdc++6 (>= 4.1.1),
+ chkconfig
 Maintainer: Jan Inowolski <j.inowolski@usos.edu.pl>
 Description: Oracle XE initial system setup
  Prepare system to install aliened oracle-xe rpm package. Instead of
